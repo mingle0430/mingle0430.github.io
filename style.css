@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+header {
+  width: 100%;
+  padding: 1rem;
+  background-color: #333;
+}
+header h1 {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.language-selection {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.language-btn {
+  display: inline-block;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: 2px solid #333;
+  margin: 10px;
+  color: #333;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.language-btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .language-btn {
+    font-size: 16px;
+    padding: 8px 16px;
+    margin: 8px;
+  }
+}
