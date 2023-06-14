@@ -3,25 +3,111 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>mingle</title>
+    <title>mingle - 중국인 유학생과 한국인의 오프라인 커뮤니티</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" type="image/svg+xml" href="./images/logo.svg" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/jpeg" href="./images/logo.jpeg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&family=Noto+Sans+KR:wght@400;700&family=Orbitron:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body>
-    <header class="header"><h1>mingle - Make Friends</h1></header>
-    <div class="language-selection">
-      <a href="./ko/index.html" class="language-btn">한국어 버전</a>
-      <a href="./zh/index.html" class="language-btn">중국어 버전</a>
-    </div>
+    <header>
+      <a href="./index.html" class="logo-section">
+        <img src="./images/logo.png" alt="logo" />
+      </a>
+      <div class="language-wrapper">
+        <a href="./ko/index.html">한국어</a>
+        <a href="./zh/index.html">中文</a>
+      </div>
+    </header>
+    <main>
+      <section id="video" class="section section1">
+        <video src="./videos/mainvideo.mp4" autoplay muted loop></video>
+        <div class="opacity-area"></div>
+        <div class="title-area">WELCOME TO THE MINGLE</div>
+      </section>
+      <section id="gallery" class="section section2">
+        <h2>MINGLE 프로그램 구성</h2>
+        <div class="order-description-wrapper">
+          <article class="order-description order-description1">
+            <img src="./images/description1.png" alt="설명사진1" />
+          </article>
+          <article class="order-description order-description2">
+            <img src="./images/description2.png" alt="설명사진2" />
+          </article>
+          <article class="order-description order-description3">
+            <img src="./images/description3.png" alt="설명사진3" />
+          </article>
+          <article class="order-description order-description4">
+            <img src="./images/description4.png" alt="설명사진4" />
+          </article>
+        </div>
+      </section>
+      <section id="programs" class="section section3">
+        <h2>Mingle Gallery</h2>
+        <div class="slide-container">
+          <div id="slider" class="slider-wrapper">
+            <div class="slide"><img src="./images/slides/1-1.png" /></div>
+            <div class="slide"><img src="./images/slides/1-2.png" /></div>
+            <div class="slide"><img src="./images/slides/1-3.png" /></div>
+            <div class="slide"><img src="./images/slides/2-1.png" /></div>
+            <div class="slide"><img src="./images/slides/2-2.png" /></div>
+            <div class="slide"><img src="./images/slides/2-3.png" /></div>
+            <div class="slide"><img src="./images/slides/3-1.jpg" /></div>
+            <div class="slide"><img src="./images/slides/3-2.jpg" /></div>
+            <div class="slide"><img src="./images/slides/4-1.png" /></div>
+            <div class="slide"><img src="./images/slides/4-2.png" /></div>
+            <div class="slide"><img src="./images/slides/4-3.png" /></div>
+            <div class="slide"><img src="./images/slides/5-1.png" /></div>
+            <div class="slide"><img src="./images/slides/5-2.png" /></div>
+            <div class="slide"><img src="./images/slides/5-3.png" /></div>
+            <div class="slide"><img src="./images/slides/6-1.png" /></div>
+            <div class="slide"><img src="./images/slides/6-2.png" /></div>
+            <div class="slide"><img src="./images/slides/6-3.png" /></div>
+            <!-- ... 추가 이미지 ... -->
+          </div>
+          <div class="btn-wrapper">
+            <button id="prevSlide">Previous</button>
+            <button id="nextSlide">Next</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="reviews" class="section section4">
+        <!-- Reviews content here -->
+        <h2>Mingle Review</h2>
+        <div class="review-container">
+          <canvas id="satisfactionChart"></canvas>
+          <div class="review-item">덜 완벽해지기!!</div>
+          <div class="review-item">
+            대형 모임 되길 않길…지금 인원수 딱 적당할 것 같아요!
+          </div>
+          <div class="review-item">스태프돼고싶네요ㅋㅋ</div>
+          <div class="review-item">
+            스태프분들이너무 재미있고 친절해서 너무너무 감사해요
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      MINGLE
+      <a href="https://www.instagram.com/mingle0430/" target="_blank">
+        <img src="./images/insta.png" alt="Instagram logo" />
+      </a>
+      <a href="https://open.kakao.com/o/gxCrnkjf" target="_blank">
+        <img src="./images/kakao.png" alt="KakaoTalk logo" />
+      </a>
+    </footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">⬆️</button>
+    <script src="./script.js"></script>
   </body>
 </html>
