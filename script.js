@@ -76,3 +76,21 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+const aboutItem = document.getElementById('about-item');
+const acordionItems = document.querySelectorAll('header .acordion-item');
+const hamburgerBtn = document.getElementById('hamburger-button');
+const removeBtn = document.getElementById('remove-btn');
+const mobileMenu = document.querySelector('header .mobile-nav ul');
+hamburgerBtn?.addEventListener('click', () => {
+  mobileMenu.classList.add('active');
+});
+removeBtn?.addEventListener('click', () => {
+  mobileMenu.classList.remove('active');
+});
+
+aboutItem.addEventListener('click', () => {
+  acordionItems.forEach((item) => {
+    item.classList.toggle('clicked');
+  });
+});

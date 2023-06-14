@@ -12,18 +12,14 @@
       name="keywords"
       content="중국인 유학생, 중국인, 중국인커뮤니티, 중국어 배우기, 중국인친구사귀기, 한중커뮤니티, 한중모임, 한중교류, 한국인친구사귀기"
     />
-    <!-- remaining head elements ... -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap"
       rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css"
     />
     <link rel="icon" type="image/jpeg" href="./images/logo.jpeg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&family=Noto+Sans+KR:wght@400;700&family=Orbitron:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./style.css" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -33,10 +29,35 @@
       <a href="./index.html" class="logo-section">
         <img src="./images/logo.png" alt="logo" />
       </a>
-      <div class="language-wrapper">
-        <a href="./ko/index.html">한국어</a>
-        <a href="./zh/index.html">中文</a>
-      </div>
+      <nav class="desktop-nav">
+        <ul>
+          <li class="about-list">
+            <ul class="about-sub-menu">
+              <div class="about-item">ABOUT</div>
+              <li>
+                <a href="./ko/index.html">한국어</a>
+                <a href="./zh/index.html">中文</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://linktr.ee/mingle0430" target="_blank">예약하기</a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="mobile-nav">
+        <div class="hamburger-button" id="hamburger-button">☰</div>
+        <ul>
+          <li>
+            <div class="about-item" id="about-item">ABOUT</div>
+            <a class="acordion-item" href="./ko/index.html">한국어</a>
+            <a class="acordion-item" href="./zh/index.html">中文</a>
+          </li>
+          <li><a href="https://linktr.ee/mingle0430">예약하기</a></li>
+          <div class="remove-btn" id="remove-btn">X</div>
+        </ul>
+      </nav>
     </header>
     <main>
       <section id="video" class="section section1">
@@ -77,8 +98,9 @@
             <div class="slide"><img src="./images/slides/2-1.png" /></div>
             <div class="slide"><img src="./images/slides/2-2.png" /></div>
             <div class="slide"><img src="./images/slides/2-3.png" /></div>
-            <div class="slide"><img src="./images/slides/3-1.jpg" /></div>
-            <div class="slide"><img src="./images/slides/3-2.jpg" /></div>
+            <div class="slide"><img src="./images/slides/3-1.png" /></div>
+            <div class="slide"><img src="./images/slides/3-2.png" /></div>
+            <div class="slide"><img src="./images/slides/3-3.png" /></div>
             <div class="slide"><img src="./images/slides/4-1.png" /></div>
             <div class="slide"><img src="./images/slides/4-2.png" /></div>
             <div class="slide"><img src="./images/slides/4-3.png" /></div>
