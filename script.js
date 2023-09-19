@@ -31,7 +31,7 @@ new Chart(ctx, {
     ], // 라벨들
     datasets: [
       {
-        data: [60, 40], // 데이터 지정
+        data: [200, 120], // 데이터 지정
         backgroundColor: ['red', 'blue'], // 각각의 데이터에 대한 배경색 지정
         hoverOffset: 4, // 호버 시 차트 부풀어오름 크기 지정
       },
