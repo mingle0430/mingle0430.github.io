@@ -7,12 +7,6 @@ document.addEventListener('DOMContentLoaded', function () {
     events: [
       {
         title: '신청',
-        start: '2023-10-04',
-        className: 'apply-button',
-        url: ' https://forms.gle/e4P7G7EZ7AqZ5DvH8',
-      },
-      {
-        title: '신청',
         start: '2023-10-06',
         className: 'apply-button',
         url: 'https://forms.gle/Ytiu2MRcDfBQj2ZG6',
