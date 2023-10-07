@@ -7,18 +7,6 @@ document.addEventListener('DOMContentLoaded', function () {
     events: [
       {
         title: '申请',
-        start: '2023-10-06',
-        className: 'apply-button',
-        url: 'https://forms.gle/oj5Sz1rD8Heu5gUf9',
-      },
-      {
-        title: '申请',
-        start: '2023-10-07',
-        className: 'apply-button',
-        url: 'https://forms.gle/3ycaVZttmcU64kq67',
-      },
-      {
-        title: '申请',
         start: '2023-10-11',
         className: 'apply-button',
         url: 'https://forms.gle/bPatvsGhf2B3ykAU9',
